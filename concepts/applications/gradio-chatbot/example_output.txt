@@ -1,0 +1,15 @@
+=== app.py — Gradio Technical Support Chatbot ===
+
+$ python app.py
+
+* Running on local URL:  http://127.0.0.1:7860
+
+This launches an interactive Gradio web interface. The chatbot:
+- Loads knowledge base from concepts/applications/gradio-chatbot/documents/
+- Supports PDF, TXT, MD, RST, JSON, YAML, XML, CSV documents
+- Uses GPT-4o-mini via OpenAI Chat Completions API
+- Function calling: record_user_details, record_unknown_question
+- Pushover notifications for escalations (requires PUSHOVER_TOKEN, PUSHOVER_USER)
+
+Since this is a long-running web server, there is no terminal output to capture.
+The app stays running until Ctrl+C.
